@@ -14,6 +14,7 @@ use App\Http\Controllers\PegawaiController;
 |
 */
 
+//Pegawai
 Route::get('/', [HomeController::class,'index']);
 
 Route::get('/pegawai', [PegawaiController::class, 'index']);
