@@ -14,7 +14,6 @@ use App\Http\Controllers\PegawaiController;
 |
 */
 
-//Pegawai
 Route::get('/', [HomeController::class,'index']);
 
 Route::get('/pegawai', [PegawaiController::class, 'index']);
@@ -25,3 +24,5 @@ Route::post('/tambahData', [PegawaiController::class, 'store']);
 Route::delete('/detail/{id}', [PegawaiController::class, 'destroy']);
 Route::get('detail/{id}/edit',[PegawaiController::class,'edit']);
 Route::patch('detail/{id}',[PegawaiController::class,'update']);
+
+
